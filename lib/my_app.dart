@@ -4,6 +4,8 @@ import 'package:flutter_playground/my_home_page.dart';
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
+  static const Brightness darkMode = Brightness.dark;
+
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
         primarySwatch: Colors.lime,
+        brightness: darkMode,
       ),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
